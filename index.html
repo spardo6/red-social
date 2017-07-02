@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Motobook</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+</head>
+<body>
+	<!-- LOGIN -->
+	<div id="view-login" class="wrapper">
+		<form id="formLogin">
+			<h1>Motobook</h1>
+			<input type="text" id="user" placeholder="Dirección de correo electrónico">
+			<input type="password" id="password" placeholder="Ingrese su contraseña">
+			<input type="submit" value="Iniciar sesión">
+		</form>
+	</div>
+
+	<!-- EDIT -->
+	<div id="view-edit" class="wrapper hide">
+		<form id="formProfile">
+			<h1>Mi perfil</h1>
+			<input type="text" id="name" placeholder="Nombre">
+			<input type="text" id="lastname" placeholder="Apellido">
+			<input type="number" id="age" placeholder="Edad">
+			<select id="type">
+				<option value="" disabled selected>Género</option>
+				<option>Mujer</option>
+				<option>Hombre</option>
+			</select>
+			<input type="text" id="motorcycle" placeholder="Moto">
+			<input type="file" id="avatar" value="Avatar" accept="image/*">
+			<input type="submit" value="Guardar">
+		</form>
+	</div>
+
+	<!-- PROFILE -->
+	<div id="view-profile" class="wrapper hide">
+		<h1>Mi perfil</h1>
+		
+		<div id="avatarView">
+			<img id="avatarImg" src="">
+			<div id="motorcycleLabel"></div>
+		</div>
+
+		<div id="nameLabel"></div>
+		<div id="ageLabel">Hombre de 25 años</div>
+	</div>
+
+	<script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>

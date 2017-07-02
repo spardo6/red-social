@@ -1,0 +1,130 @@
+html {
+	margin: 0;
+	padding: 0;
+	font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+body, body * {
+	color: #959696;
+	box-sizing: border-box;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 50px auto 100px;
+	display: block;
+	overflow: hidden;
+}
+
+.hide {
+	display: none!important;
+}
+
+form {
+	width: 100%;
+	max-width: 400px;
+	display: block;
+	margin: 100px auto 50px;
+	padding: 16px;
+	border-bottom: 1px solid #cbd2d6;
+}
+
+input, select {
+	width: 100%;
+	box-shadow: none;
+	border-radius: 4px;
+}
+
+input[type="text"], input[type="password"], input[type="number"], select {
+	height: 44px;
+	padding: 0 10px;
+	border: 1px solid #9da3a6;
+	background: #fff;
+	text-overflow: ellipsis;
+	color: #000;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0 0 10px;
+}
+
+input[type="submit"] {
+	min-height: 44px;
+	border: 0;
+	background-color: #0070BA;
+	cursor: pointer;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+	font-weight: 700;
+	text-shadow: none;
+	text-decoration: none;
+	margin-top: 1rem;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+	color: #1F4995;
+	text-transform: capitalize;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+/** Mostrar perfil */
+#avatarView {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	display: block;
+	border: 1px solid #959696;
+	position: relative;
+}
+
+#avatarView img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+#avatarView div {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	padding: 16px 4px;
+	background-color: rgba(0,0,0,.7);
+	color: #fafafa;
+}
+
+#nameLabel {
+	font-size: 50px;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 4px;
+}
+
+#ageLabel {
+	font-size: 20px;
+	text-align: center;
+	padding: 4px;
+}
+
+#perfilEdit {
+	width: 100%;
+	text-align: center;
+	display: block;
+	margin-top: 50px;
+}
